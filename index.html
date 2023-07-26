@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- daisyui Setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e32afc2faa.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                "primary-color": '#F85559',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!-- front setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     
-</body>
+  </head>
+  <body data-theme="light">
+    <header>
+        <!-- nav -->
+        <div class="navbar justify-between lg:justify-around lg:px-20 lg:bg-primary-color lg:rounded-full max-w-[1440px] m-auto ">
+            <!-- large device -->
+
+            <div class=" hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            
+            <div class=" md:navbar-center" >
+                <a class="flex  items-center max-lg:text-lg lg:text-4xl font-bold text-center lg:text-white">
+                    <img src="./images/logo.png" alt="" class="max-lg:w-6 h-auto block ">
+                    Fruit Burst
+                </a>
+            </div>
+            <!-- Mobaile device -->
+            <div class="">
+                <div class="dropdown">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </label>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 top-8 right-0">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                      <div class="form-control input rounded-full  w-24 md:w-auto flex flex-row">
+                        <input type="text" placeholder="Search here" class="border-none rounded-full" />
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass" style="color: #000000;"></i></button>
+                    </div>
+                  </ul>
+                </div>
+                
+              </div>
+            <div class="max-lg:hidden">
+                <div class="form-control input rounded-full  w-24 md:w-auto flex flex-row">
+                    <input type="text" placeholder="Search here" class="border-none rounded-full" />
+                    <button type="submit"><i class="fa-regular fa-magnifying-glass" style="color: #000000;"></i></button>
+                </div>
+            </div>
+          </div>
+        <!-- banner  -->
+        <section class="container max-w-[1440px] mx-auto ">
+            <div class="carousel mt-12 lg:w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/banner1.png" class="w-full" />
+                  <div class="flex flex-col items-center gap-8 absolute top-20 left-96">
+                    <h1 class=" text-center text-white text-7xl font-extrabold">
+                        Exotic tastes at your 
+                        <br>
+                        doorstep
+                    </h1>
+                    <p class="text-center text-white text-xl font-medium">We supply highly quality organic products</p>
+                    <button class="btn bg-primary-color text-white">Shop Now</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="/images/banner2.png" class="w-full" />
+                  <div class="flex flex-col items-center gap-8 absolute top-20 left-96">
+                    <h1 class=" text-center text-white text-7xl font-extrabold">
+                        Exotic tastes at your 
+                        <br>
+                        doorstep
+                    </h1>
+                    <p class="text-center text-white text-xl font-medium">We supply highly quality organic products</p>
+                    <button class="btn bg-primary-color text-white">Shop Now</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="/images/banner3.png" class="w-full" />
+                  <div class="flex flex-col items-center gap-8 absolute top-20 left-96">
+                    <h1 class=" text-center text-white text-7xl font-extrabold">
+                        Exotic tastes at your 
+                        <br>
+                        doorstep
+                    </h1>
+                    <p class="text-center text-white text-xl font-medium">We supply highly quality organic products</p>
+                    <button class="btn bg-primary-color text-white">Shop Now</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="/images/banner4.png" class="w-full" />
+                  <div class="flex flex-col items-center gap-8 absolute top-20 left-96">
+                    <h1 class=" text-center text-white text-7xl font-extrabold">
+                        Exotic tastes at your 
+                        <br>
+                        doorstep
+                    </h1>
+                    <p class="text-center text-white text-xl font-medium">We supply highly quality organic products</p>
+                    <button class="btn bg-primary-color text-white">Shop Now</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+            </div>
+            <!-- hiden section  -->
+            <div class="max-w-[74.75rem] relative mx-auto bg-white rounded-lg shadow">
+                <div class="flex justify-evenly">
+                    <div class="flex flex-col justify-center items-center">
+                        <img class="" src="./images/fruit1.png" />
+                        <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Grapes</div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img class="" src="./images/fruit2.png" />
+                        <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Oreange</div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img class="" src="./images/fruit3.png" />
+                        <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Mango</div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img class="" src="./images/fruit4.png" />
+                        <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Strawberry</div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img class="" src="./images/fruit5.png" />
+                        <div class="text-right text-neutral-900 text-opacity-80 text-xl font-medium">Pomegranate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+  </body>
 </html>

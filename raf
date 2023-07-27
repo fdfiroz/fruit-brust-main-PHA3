@@ -1,0 +1,58 @@
+<div class="flex lg:flex-row flex-col items-center justify-between gap-10 p-12" >
+    <div class="flex flex-col items-center justify-center gap-1">
+      <div class="avatar justify-around">
+        <div class="w-8/12 rounded-full">
+        <img src="./images/member1.png" />
+        </div>
+      </div>
+      <h4 class="text-center text-white text-2xl font-bold">Awlad Hossain</h4>
+      <div class="text-center text-white text-base font-medium">Fruits Expert</div>
+      <div>
+        <a href=""><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a>
+        <a href=""><i class="fa-brands fa-twitter" style="color: #F85559;"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></a>
+      </div>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-1">
+      <div class="avatar justify-around">
+        <div class="w-8/12 rounded-full">
+        <img src="./images/member2.png" />
+        </div>
+      </div>
+      <h4 class="text-center text-white text-2xl font-bold">Safia Chowdhury</h4>
+      <div class="text-center text-white text-base font-medium">Fruits Expert</div>
+      <div>
+        <a href=""><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a>
+        <a href=""><i class="fa-brands fa-twitter" style="color: #F85559;"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></a>
+      </div>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-1">
+      <div class="avatar justify-around">
+        <div class="w-8/12 rounded-full">
+        <img src="./images/member3.png" />
+        </div>
+      </div>
+      <h4 class="text-center text-white text-2xl font-bold">Rokib Hossain</h4>
+      <div class="text-center text-white text-base font-medium">Fruits Expert</div>
+      <div>
+        <a href=""><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a>
+        <a href=""><i class="fa-brands fa-twitter" style="color: #F85559;"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></a>
+      </div>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-1">
+      <div class="avatar justify-around">
+        <div class="w-8/12 rounded-full">
+        <img src="./images/member4.png" />
+        </div>
+      </div>
+      <h4 class="text-center text-white text-2xl font-bold">Chaity</h4>
+      <div class="text-center text-white text-base font-medium">Fruits Expert</div>
+      <div>
+        <a href=""><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a>
+        <a href=""><i class="fa-brands fa-twitter" style="color: #F85559;"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></a>
+      </div>
+    </div>
+   </div>
